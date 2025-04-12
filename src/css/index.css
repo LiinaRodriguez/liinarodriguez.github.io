@@ -1,0 +1,78 @@
+*{
+  background-color: #1D1C1B;
+  color: #F5F4F1;
+  font-family: 'Chivo Mono', Courier, monospace;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center ;
+  margin: 5%;
+}
+
+.social{
+  position: absolute;
+  right:20%;
+  top:4%;
+  display: flex;
+  flex-direction: row;
+}
+
+.social-item{
+ padding:5px;
+  /* border-radius:25px; */
+}
+.social-item:hover{
+  animation:pulse 1.5s infinite;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+  color: #F5F4F1;
+}
+
+.header-foto{
+ background-image: url("../assets/pfp.png");
+ width: 120px;
+ height: 120px;
+ border-radius: 50%;
+ background-size: cover;
+ background-position:top;
+ background-repeat: no-repeat;
+
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.header-foto:hover {
+  animation: pulse 1.5s infinite;
+}
+
+.header-info{
+  margin-left: 2%;
+}
+
+.tecnologias{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center ;
+  margin: 5%;
+}
+
+.proyectos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center ;
+  margin: 5%;
+}
