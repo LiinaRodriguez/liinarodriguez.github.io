@@ -9,9 +9,14 @@ async function loadGithubProjects() {
     repoDiv.classList.add('repo');
  
     repoDiv.innerHTML = `
-      <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
-      <p>${repo.description || 'No description available'}</p>
-      <p>⭐ ${repo.stargazers_count} | ${repo.topics || 'Unknown language'}</p>
+    <div class="project-header">
+      <h3> ${repo.name} </h3>
+      <a href=${repo.html_url} target="_blank" title="GitHub">
+        <img src="assets/icons/github.svg" alt="GitHub" class="icon">
+      </a>
+    </div>
+      <p class="project-description">${repo.description || 'No description'}</p>
+      <p class="project-stack">  ${repo.topics || ''}</p>
     `;
 
     container.appendChild(repoDiv);

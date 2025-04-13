@@ -14,7 +14,7 @@
 
 .social{
   position: absolute;
-  right:20%;
+  right:25%;
   top:4%;
   display: flex;
   flex-direction: row;
@@ -69,10 +69,34 @@
   margin: 5%;
 }
 
-.proyectos{
+.proyectos, .repositorios{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center ;
   margin: 5%;
+}
+
+#projects-container, #repos-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+  margin: 5%;
+}
+
+.proyecto, .repo{
+  display: flex;
+  flex-direction: column;
+  border:solid 1px #F5F4F1;
+  border-radius: 8px;
+  padding: 12px;
+  max-width: 320px;
+  min-width: 300px;
+}
+
+.project-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
